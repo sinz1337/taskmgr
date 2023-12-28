@@ -1,0 +1,139 @@
+﻿<Page x:Class="taskmgr.PageFolder.StaffAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:taskmgr.PageFolder"
+      xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+      mc:Ignorable="d" 
+      d:DesignHeight="1100" d:DesignWidth="1920"
+      Title="Добавление сотрудника">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Label Content="Добавление"
+               Style="{StaticResource LabelLogo}"
+               Grid.Column="0"
+               Grid.Row="0"
+               Grid.ColumnSpan="2"
+               Foreground="White"
+               FontSize="70"/>
+
+        <TextBox x:Name="NameTB"
+                 Grid.Column="0" Grid.Row="1"
+                 Style="{DynamicResource TextBox}"
+                 BorderBrush="White"
+                 BorderThickness="2"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"
+                 materialDesign:HintAssist.Hint="Имя"    
+                 materialDesign:HintAssist.FloatingOffset="7,-30"
+                 materialDesign:HintAssist.Background="Black"
+                 materialDesign:HintAssist.Foreground="White"
+                 materialDesign:HintAssist.HelperTextFontSize="17"
+                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10">
+            <TextBox.Resources>
+                <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="White"/>
+            </TextBox.Resources>
+        </TextBox>
+
+        <TextBox x:Name="SurNameTB"
+                 Grid.Column="0" Grid.Row="2"
+                 Style="{DynamicResource TextBox}"
+                 BorderBrush="White"
+                 BorderThickness="2"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"
+                 materialDesign:HintAssist.Hint="Фамилия"    
+                 materialDesign:HintAssist.FloatingOffset="7,-30"
+                 materialDesign:HintAssist.Background="Black"
+                 materialDesign:HintAssist.Foreground="White"
+                 materialDesign:HintAssist.HelperTextFontSize="17"
+                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10">
+            <TextBox.Resources>
+                <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="White"/>
+            </TextBox.Resources>
+        </TextBox>
+
+        <TextBox x:Name="MiddleNameTB"
+                 Grid.Column="0" Grid.Row="3"
+                 Style="{DynamicResource TextBox}"
+                 BorderBrush="White"
+                 BorderThickness="2"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"
+                 materialDesign:HintAssist.Hint="Отчество"    
+                 materialDesign:HintAssist.FloatingOffset="7,-30"
+                 materialDesign:HintAssist.Background="Black"
+                 materialDesign:HintAssist.Foreground="White"
+                 materialDesign:HintAssist.HelperTextFontSize="17"
+                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10">
+            <TextBox.Resources>
+                <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="White"/>
+            </TextBox.Resources>
+        </TextBox>
+
+        <TextBox x:Name="TaskTB"
+                 Grid.Column="1" Grid.Row="1"
+                 Style="{DynamicResource TextBox}"
+                 BorderBrush="White"
+                 BorderThickness="2"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"
+                 materialDesign:HintAssist.Hint="Задача"    
+                 materialDesign:HintAssist.FloatingOffset="7,-30"
+                 materialDesign:HintAssist.Background="Black"
+                 materialDesign:HintAssist.Foreground="White"
+                 materialDesign:HintAssist.HelperTextFontSize="17"
+                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10">
+            <TextBox.Resources>
+                <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="White"/>
+            </TextBox.Resources>
+        </TextBox>
+
+        <TextBox x:Name="StatusTB"
+                 Grid.Column="1" Grid.Row="2"
+                 Style="{DynamicResource TextBox}"
+                 BorderBrush="White"
+                 BorderThickness="2"
+                 VerticalContentAlignment="Center"
+                 HorizontalContentAlignment="Left"
+                 materialDesign:HintAssist.Hint="Статус задачи"    
+                 materialDesign:HintAssist.FloatingOffset="7,-30"
+                 materialDesign:HintAssist.Background="Black"
+                 materialDesign:HintAssist.Foreground="White"
+                 materialDesign:HintAssist.HelperTextFontSize="17"
+                 materialDesign:TextFieldAssist.TextFieldCornerRadius="10">
+            <TextBox.Resources>
+                <SolidColorBrush x:Key="PrimaryHueLightBrush" Color="White"/>
+            </TextBox.Resources>
+        </TextBox>
+
+        <Button x:Name="AddBtn"
+                Grid.Column="0" Grid.Row="4"
+                Grid.ColumnSpan="2"
+                Width="466" Height="54"
+                Content="Добавить"
+                Foreground="Black"
+                Background="White"
+                FontSize="40"
+                FontFamily="Rubik"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                materialDesign:ButtonAssist.CornerRadius="25"
+                Style="{StaticResource Button}"
+                Click="AddBtn_Click"/>
+
+    </Grid>
+</Page>
